@@ -1,0 +1,58 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: #00B7FF;
+}
+.headerDiv, .footerDiv {
+	height: 100px;
+	background-color: #eee;
+}
+.contentDiv {
+	min-height: 500px;
+	border: solid 1px #000;
+	padding: 20px;
+}
+.logoDiv {
+	width: 80%;
+	padding: 20px;
+
+}
+.menuDiv {
+	height: 45px;
+
+}
+
+.menuDiv ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    height: 45px;
+    padding-left:20px;
+
+}
+
+.menuDiv li {
+    float: left;
+}
+
+.menuDiv li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.menuDiv li a:hover {
+    background-color: #4CAF50;
+}
+
+.menuDiv .active {
+    background-color: #4CAF50;
+}

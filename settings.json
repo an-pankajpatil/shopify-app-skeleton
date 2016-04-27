@@ -1,0 +1,9 @@
+{
+	"oauth": {
+		"api_key": "5ee2444a8feaa133a35a32328c0fb434",
+		"client_secret": "6a16f81c050bf4e45af0badedbb06cf2",
+		"redirect_uri": "http://localhost:9090/access_token",
+		"scope": "read_themes,write_themes,write_customers,read_script_tags,write_script_tags,read_products,write_products"
+	},
+	"app_url": "//localhost:9090"
+}

@@ -1,0 +1,10 @@
+<div class="logoDiv">Header comes here - <%= title %></div>
+	  <div class="menuDiv">
+	  	<ul>
+	  		<li><%if (title == 'Home') { %> <a href="/" class="active" >Home</a> <% } else { %><a href="/">Home</a> <% } %></li>
+	  		<li><%if (title == 'Setting') { %> <a href="/setting" class="active">Settings</a> <% } else { %><a href="/setting">Settings</a> <% } %></li>
+	  		<li><%if (title == 'Account Information') { %> <a href="/account_info" class="active">Account Information</a> <% } else { %> <a href="/account_info">Account Information</a> <% } %></li>
+	  		<li><%if (title == 'Help') { %> <a href="/help" class="active">Help</a> <% } else { %> <a href="/help">Help</a> <% } %></li>
+	  		<li><%if (title == 'Additional Information') { %> <a href="/additional_info" class="active">Additional Info</a> <% } else { %> <a href="/additional_info">Additional Info</a> <% } %></li>
+	  	</ul>
+	  </div>

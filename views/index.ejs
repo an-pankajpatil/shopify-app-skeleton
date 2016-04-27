@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="X-Frame-Options" content="ALLOW-FROM https://<%= shop %>.myshopify.com" />
+	<script src="https://cdn.shopify.com/s/assets/external/app.js"></script>
+	<script type="text/javascript">
+	ShopifyApp.init({
+		apiKey: '<%= api_key %>',
+		shopOrigin: 'https://<%= shop %>.myshopify.com',
+		debug: false,
+		forceRedirect: true
+	});
+	//console.log(title);
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<title>| Dealer Locator and Store Mapper App</title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+	ShopifyApp.ready(function(){
+		ShopifyApp.Bar.initialize({
+			title: '<%= title %>',
+			icon: '/images/logo.png',
+		});
+		ShopifyApp.Bar.loadingOff();
+
+	});
+	
+	</script>
+	  <div class="headerDiv">
+	    <%- include header.ejs %>
+	  </div>
+	  <div class="contentDiv">
+	  	<h1><%= title %></h1>
+	  </div>
+	  <div class="footerDiv">
+	  	<%- include footer.ejs %>
+	  </div>
+</body>
+</html>

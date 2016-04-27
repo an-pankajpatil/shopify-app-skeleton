@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdn.shopify.com/s/assets/external/app.js"></script>
+	<script type="text/javascript">
+
+	ShopifyApp.init({
+		apiKey: '<%= api_key %>',
+		shopOrigin: 'https://<%= shop %>.myshopify.com',
+		debug: true,
+		forceRedirect: false
+	});
+	
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<title><%= title %></title>
+</head>
+<body>
+	<script type="text/javascript">
+	ShopifyApp.ready(function(){
+		ShopifyApp.Bar.initialize({
+			title: '<%= title %>',
+			icon: '/images/logo.png',
+			
+		});
+		ShopifyApp.Bar.loadingOff();
+
+	});
+	</script>
+	<div class="headerDiv">
+	  <%- include header.ejs %>
+	  </div>
+	  <div class="contentDiv">
+	  	<h1><%= title %></h1>
+	  </div>
+	  <div class="footerDiv">
+	  	<%- include footer.ejs %>
+	  </div>
+</body>
+</html>
